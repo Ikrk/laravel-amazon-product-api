@@ -35,6 +35,6 @@ trait Search
          */
         $response = $this->api()->searchItems($request);
 
-        return json_decode($response->__toString(), true);
+        return json_decode($response->__toString(), false);
     }
 }
